@@ -1,0 +1,85 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Georgia';
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+/*Configurando as imagens do background */
+.img-um, .img-dois, .img-tres, .img-quatro{
+    position: relative;
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.img-um{
+    background-image: url('../images/adult-blur-body-230590.jpg');
+    min-height: 100%;
+}
+
+.img-dois{
+    background-image: url('../images/adult-alcohol-alcoholic-206527.jpg');
+    min-height: 250px;
+}
+
+.img-tres{
+    background-image: url('../images/bike-dress-fashion-804899.jpg');
+    min-height: 500px;
+}
+
+.img-quatro{
+    background-image: url('../images/alone-back-view-beautiful-674268.jpg');
+    min-height: 100%;
+}
+
+/*Configurando as divs com o texto*/
+.section{
+    text-align: center;
+    padding: 80px;
+}
+
+.section-branca{
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.section-preta{
+    background-color: #242323;
+    color: #e7d3b1;
+}
+
+.paragrafo{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 4vw;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.paragrafo .cor-fundo{
+    background-color: #242323;
+    color: #e7d3b1;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/*Retirando a cor de fundo dos textos sobre as imagens dois e três*/
+.paragrafo .cor-fundo.transparente{
+    background-color: transparent;
+}
+
+/*Configuração para não aplicar o efeito parallax em smartphones */
+@media(max-width:568px){
+    .img-um, .img-dois, .img-tres, .img-quatro{
+        background-attachment: scroll;
+    }
+}
