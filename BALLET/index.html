@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <title>Dança</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="...">
+        <meta name="robots" content="index, follow">
+        <link rel="stylesheet" href="_css_/style.css" type="text/css">
+        <link rel="shortcut icon" href="_icons_/favicon.ico" type="image/x-icon">
+        <link rel="canonical" href="https://localhost/index.html">
+    </head>
+    <body>
+        <!--CONTAINER BACKGROUND-->
+        <header id="background">
+            <div class="top">
+                <div class="containerMenu">
+                    <span class="openBtn" onclick="openNav()">&#9776;</span>
+                    <nav id="menu" class="menu">
+                        <ul>
+                            <li><a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a></li>
+                            <li><a href="#">index</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">gallery</a></li>
+                            <li><a href="#">blog</a></li>
+                            <li><a href="#">contacts</a></li>
+                        </ul>
+                    </nav>
+                    <!--JAVASCRIPT DO MENU-->
+                    <script>
+                        function openNav(){
+                            document.getElementById("menu").style.width = "100%";
+                        }
+                        function closeNav(){
+                            document.getElementById("menu").style.width = "0";
+                        }
+                    </script>
+                </div>
+            </div>
+            <div class="centro">
+                <h1>Ballet</h1>
+                <p class="mobile">I still have a dream.</p>
+                <p class="desktop">I still have a dream. I still have a dream.</p>
+            </div>
+            <div class="bottom">
+                <!--LEFT-->
+                <div class="left">
+                    <div class="caixa um">
+                        <a href="#">&rsaquo;</a>
+                    </div>
+                    <div class="caixa dois">
+                        <p>
+                            Rua Mandaguari N°563
+                            <br>Email: exemplo@exemplo.com
+                            <br>Fones:(99) 96589-6256
+                        </p>
+                    </div>
+                </div>
+                <!--RIGHT-->
+                <div class="right">
+
+                </div>
+            </div>
+        </header>
+        
+        <!--CONTAINER ASSINATURA-->
+        <section id="assinatura">
+            <h2>Assinatura</h2>
+            <fieldset id="assinar">
+                <form class="assinar" action="#" method="post">
+                    <input type="email" name="email" id="email" title="email" placeholder="Assinatura de Noticias">
+                    <input type="submit" id="submitAssinar" value="Assinar">
+                </form>
+            </fieldset>
+        </section>
+
+        <!--CONTAINER ABOUT-->
+        <section id="about">
+            <h2>About</h2>
+            <div class="container">
+                <!--FOTO DA EMPRESA-->
+                <div class="img">
+                    <img src="_images_/balletCortada.jpg" alt="foto empresa">
+                </div>
+                <!--TEXTO SOBRE A EMPRESA-->
+                <div class="texto">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Numquam, odit magni. Ducimus dolorum saepe assumenda reprehenderit, 
+                        adipisci labore optio id obcaecati fuga aliquid quae, 
+                        libero odit ullam voluptate odio itaque?
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--CONTAINER SERVICES-->
+        <main id="services">
+            <h2>Services</h2>
+            <div class="container">
+                <ul class="services">
+                    <li>services</li>
+                    <li>services</li>
+                    <li>services</li>
+                    <li>services</li>
+                </ul>
+                <ul class="services">
+                    <li>services</li>
+                    <li>services</li>
+                    <li>services</li>
+                    <li>services</li>
+                </ul>
+            </div>
+        </main>
+
+        <!--CONTAINER PARCEIROS-->
+        <section id="parceiros">
+            <h2>Parceiros</h2>
+            <ul class="parceiros">
+                <li><a href="#">parceiros</a></li>
+                <li><a href="#">parceiros</a></li>
+                <li><a href="#">parceiros</a></li>
+                <li><a href="#">parceiros</a></li>
+            </ul>
+        </section>
+
+        <!--CONTAINER CONTATOS-->
+        <section id="contatos">
+            <h2>Contatos</h2>
+            <div class="container">
+                <!--FORMULARIO-->
+                <fieldset id="formulario">
+                    <form action="#" method="post">
+                        <input type="text" name="nome" id="nome" title="nome" placeholder="Digite seu nome">
+                        <input type="email" name="email" id="e-mail" title="email" placeholder="Digite seu email">
+                        <textarea name="texto" id="texto" title="texto" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+                        <input type="submit" id="submit" value="Enviar">
+                    </form>
+                </fieldset>
+                <!--ENDEREÇO-->
+                <div class="endereco">
+                    <h3>Endereço</h3>
+                    <p>
+                        Rua Mandaguari N°563
+                        <br>Email: exemplo@exemplo.com
+                        <br>Fones:(99) 96589-6256 / (99) 96589-9658
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--CONTAINER RODAPÉ-->
+        <footer id="rodape">
+            <p>Design by: @rsanttos89&reg;2018</p>
+        </footer>
+    </body>
+</html>

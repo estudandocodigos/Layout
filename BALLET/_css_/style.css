@@ -1,0 +1,277 @@
+/*FONTS*/
+@font-face {
+	font-family:'subTitulos';
+	src: url("../_fonts_/DancingScript-Bold.ttf");
+}
+/*SETUP PADRÃO DE TODO O SITE*/
+*{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-size: 100%;
+}
+body{
+    font-family: sans-serif;
+}
+h2{
+    font-size: 250%;
+    font-family: 'subTitulos';
+    margin-bottom: 25px;
+}
+h3{
+    font-size: 130%;
+}
+p, a, li{
+    font-size: 110%;
+    padding: 5px;
+}
+
+/*SETUP PADRÃO DE TODOS FORMULARIOS*/
+fieldset{
+    border: none;
+    text-align: left;
+}
+input, textarea{
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+}
+#submitAssinar, #submit{
+    width: 100px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*SETUP PADRÃO DAS SECTIONS,MAIN E CONTAINES*/
+#background, #assinatura, #about, #services, #parceiros, #contatos, #rodape, .container, .centro, .bottom, .left, .um, .dois{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#assinatura, #about, #services, #parceiros, #contatos{
+    padding: 25px 5%;
+}
+
+/*SETUP PADRÃO DAS SECTIONS ASSINATURA, SERVICES, CONTATOS E RODAPÉ*/
+#assinatura, #services, #contatos, #rodape{
+    background-color: #32394c;
+    color: #c6acad;
+}
+
+/*SETUP DO CONTAINER BACKGROUND*/
+#background{
+    height: 50vh;
+    background: url('../_images_/ballet.jpg') no-repeat center center;
+    background-size: cover;
+}
+/*TOP*/
+#background .top{
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*SETUP MENU MOBILE*/
+#background .containerMenu{
+    padding-top: 12px;
+    padding-left: 5%;
+    text-align: left;
+}
+#background .menu{
+    width: 0%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #32394c;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+span.openBtn{
+    border: 3px solid #32394c;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 150%;
+    color: #32394c;
+}
+#menu .closeBtn {
+    font-size: 200%;
+    font-weight: 900;
+}
+#menu li{
+    font-size: 115%;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#menu a{
+    color: #c6acad;
+}
+#menu a:hover{
+    color: #606060;
+    transition: 0.6s;
+}
+
+/*CENTRO*/
+#background .centro{
+    height: 80%;
+    justify-content: flex-end;
+    text-align: left;
+    color: #32394c;
+    padding-left: 5%;
+}
+.centro h1{
+    font-size: 10vw;
+}
+.centro p.desktop{
+    display: none;
+}
+
+/*BOTTOM*/
+#background .bottom{
+    flex-direction: row;
+    height: 20%;
+}
+
+/*BOTTOM LEFT*/
+#background .left{
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+    background-color: #32394c;
+    color: #c6acad;
+    border-radius: 0 5px 0 0;
+}
+.caixa{
+    height: 100%;;
+}
+.left, .right{
+    display: none;
+}
+.um{
+    width: 33.33%;
+    background: url('../_images_/play.jpeg') no-repeat center center;
+    background-size: cover;
+    justify-content: center;
+}
+.dois{
+    width: 66.66%;
+    text-align: left;
+    padding-left: 5px;
+    justify-content: flex-end;
+}
+/*BOTTOM RIGHT*/
+#background .right{
+    width: 50%;
+    height: 100%;
+}
+
+/*SETUP DO CONTAINER ASSINATURA*/
+#assinatura h2{
+    display: none;
+}
+#assinatura .assinar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#submitAssinar{
+    margin-left: 5px;
+}
+
+/*SETUP DO CONTAINER ABOUT*/
+#about .img{
+    display: none;
+    max-width: 650px;
+    max-height: 400px;
+}
+
+/*SETUP DO CONTAINER SERVICES*/
+#services .container{
+    flex-direction: row;
+}
+
+/*SETUP DO CONTAINER PARCEIROS*/
+#parceiros li{
+    display: inline;
+    padding: 5px 10px;
+    line-height: 35px;
+}
+#parceiros a{
+    color: #32394c;
+}
+#parceiros a:hover{
+    color: #c6acad;
+}
+
+/*SETUP DO CONTAINER CONTATOS*/
+#formulario{
+    margin-bottom: 25px;
+}
+.endereco{
+    text-align: left;
+}
+
+/*SETUP DO CONTAINER RODAPÉ*/
+#rodape{
+    padding: 10px 5%;
+    border-top: 1px solid #c6acad;
+}
+
+/*SETUP RESPONSIVO*/
+@media (min-width:600px){
+    #about .container{
+        flex-direction: row;
+    }
+    #about .img{
+        display: block;
+    }
+    #assinar, #formulario{
+        width: 80%;
+    }
+    .endereco{
+        text-align: center;
+    }
+}
+
+@media (min-width:1080px){
+    #about .container{
+        width: 80%;
+    }
+}
+
+@media (min-width:1366px){
+    #about .container, #assinar, #formulario{
+        width: 70%;
+    }
+}
+
+@media only screen and (orientation: landscape){
+    #background{
+        height: 100vh;
+    }
+}
+
+@media (min-width:960px) and (orientation:landscape){
+    .centro p.mobile, .endereco{
+        display: none;
+    }
+    #background .centro{
+        justify-content: center;
+    }
+    .left, .right{
+        display: flex;
+    }
+    .centro p.desktop{
+        display: block;
+    }
+}

@@ -1,0 +1,114 @@
+/*FONTS*/
+@font-face {
+	font-family:'titulo';
+	src: url("../fontes/BubblegumSans-Regular.ttf");
+}
+@font-face {
+	font-family:'rodape';
+	src: url("../fontes/Merienda-Bold.ttf");
+}
+
+/*Configuração Padrão*/
+/*--------------------------------------------------------------*/
+*{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-size: 100%;
+
+    font-weight: 500;
+    text-align: center;
+}
+body{
+    font-family: sans-serif;
+}
+
+/*Setup Cabeçalho / Titulo / Menu*/
+/*--------------------------------------------------------------*/
+#cabecalho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/*Titulo*/
+#cabecalho .container-titulo h1{
+    font-family: 'titulo';
+    font-size: 300%;
+    padding: 10px 0;
+    color: #646464;
+}
+#cabecalho span.marcar{
+    color: #5aa399;
+}
+/*Menu*/
+#cabecalho .container-menu li{
+    display: inline;
+    padding: 0 10px;
+    text-transform: uppercase;
+    line-height: 25px;
+}
+#cabecalho .container-menu a{
+    color: #646464;
+}
+#cabecalho a.marcar, a:hover{
+    color:#5aa399;
+    border-bottom: 2px solid #5aa399;
+}
+
+/*Setup Rodapé*/
+/*--------------------------------------------------------------*/
+#rodape{
+    background-color: #242323;
+    color: #fff;
+    padding: 20px 0 0 0;
+}
+#rodape div.espaco{
+    padding: 0 10px 20px 10px;
+}
+#rodape h2{
+    font-size: 130%;
+    padding-bottom: 5px;
+}
+#rodape img{
+    width: 20px;
+    padding-right: 5px;
+}
+
+/*Formulario*/
+.newsletter fieldset{
+    border: none;
+}
+.newsletter input{
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: #646464;
+    padding: 5px;
+}
+
+/*Registro*/
+#rodape .copy{
+    background-color: #5aa399;
+    padding: 10px 0;
+    font-family: 'rodape';
+}
+
+/*Configuração para Layout Responsivo*/
+@media screen and (min-width:500px){
+    #rodape .textos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+    #rodape .contatos, biografia, newsletter, #rodape h2, #rodape p{
+        text-align: left;
+    }
+    #rodape .btn{
+        width: 100px;
+        float: left;
+    }
+}

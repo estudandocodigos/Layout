@@ -1,0 +1,195 @@
+/*FONTS*/
+@font-face {
+	font-family:'titulo';
+	src: url("../fontes/BubblegumSans-Regular.ttf");
+}
+@font-face {
+	font-family:'rodape';
+	src: url("../fontes/Merienda-Bold.ttf");
+}
+
+/*Configuração Padrão*/
+/*--------------------------------------------------------------*/
+*{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-size: 100%;
+
+    font-weight: 500;
+    text-align: center;
+}
+body{
+    font-family: sans-serif;
+}
+
+/*Setup Cabeçalho / Titulo / Menu*/
+/*--------------------------------------------------------------*/
+#cabecalho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/*Titulo*/
+#cabecalho .container-titulo h1{
+    font-family: 'titulo';
+    font-size: 300%;
+    padding: 10px 0;
+    color: #646464;
+}
+#cabecalho span.marcar{
+    color: #5aa399;
+}
+/*Menu*/
+#cabecalho .container-menu li{
+    display: inline;
+    padding: 0 10px;
+    text-transform: uppercase;
+    line-height: 25px;
+}
+#cabecalho .container-menu a{
+    color: #646464;
+}
+#cabecalho a.marcar, a:hover{
+    color:#5aa399;
+    border-bottom: 2px solid #5aa399;
+}
+
+/*Setup Capa / Texto*/
+/*--------------------------------------------------------------*/
+#capa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    background: url('../images/capa.jpeg') no-repeat center center;
+    background-size: cover;
+    margin-top: 10px;
+}
+#capa .container-texto {
+    width: 85%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 25px;
+    border-radius: 25px;
+    color: #fff;
+}
+#capa .container-texto h2{
+    font-size: 150%;
+}
+#capa span.marcar{
+    color: #5aa399;
+}
+
+/*Setup Services*/
+/*--------------------------------------------------------------*/
+#services{
+    margin-top: 20px;
+}
+#services h2{
+    font-size: 140%;
+}
+#services h3{
+    font-size: 120%;
+    padding-bottom: 10px;
+}
+#services p{
+    color: #646464;
+    padding: 0 10px;
+}
+#services img{
+    width: 40px;
+    margin: 20px 0 5px 0;
+}
+
+/*Setup Image e Texto do Fone*/
+/*--------------------------------------------------------------*/
+#phone{
+    background: url('../images/capa-phone.jpg')no-repeat center center;
+    background: cover;
+    margin-top: 20px;
+    padding: 20px 0;
+    color: #fff;
+}
+#phone .text h2{
+    font-size: 200%;
+    padding-bottom: 10px;
+}
+#phone .text span{
+    font-size: 125%;
+}
+
+/*Setup Rodapé*/
+/*--------------------------------------------------------------*/
+#rodape{
+    background-color: #242323;
+    color: #fff;
+    padding: 20px 0 0 0;
+}
+#rodape div.espaco{
+    padding: 0 10px 20px 10px;
+}
+#rodape h2{
+    font-size: 130%;
+    padding-bottom: 5px;
+}
+#rodape img{
+    width: 20px;
+    padding-right: 5px;
+}
+
+/*Formulario*/
+.newsletter fieldset{
+    border: none;
+}
+.newsletter input{
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: #646464;
+    padding: 5px;
+}
+
+/*Registro*/
+#rodape .copy{
+    background-color: #5aa399;
+    padding: 10px 0;
+    font-family: 'rodape';
+}
+
+/*Configuração para Layout Responsivo*/
+@media screen and (min-width:500px){
+    #services{
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    #services .caixa-um, .caixa-dois{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #phone .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 85%;
+        margin: 0 auto;
+    }
+    #rodape .textos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+    #rodape .contatos, biografia, newsletter, #rodape h2, #rodape p{
+        text-align: left;
+    }
+    #rodape .btn{
+        width: 100px;
+        float: left;
+    }
+}

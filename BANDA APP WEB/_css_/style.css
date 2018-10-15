@@ -1,0 +1,193 @@
+/*FONTS*/
+@font-face {
+	font-family:'subTitulos';
+	src: url("../_fonts_/lobster.ttf");
+}
+
+/*SETUP PADRÃO TODO SITE*/
+*{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-size: 100%;
+}
+body{
+    font-family: sans-serif;
+}
+h2{
+    font-size: 150%;
+    font-family: 'subTitulos';
+    text-align: center;
+    margin-bottom: 25px;
+}
+#about, #shows, #shop, #contatos{
+    padding: 25px 5px;
+    text-align: center;
+}
+#cabecalho .top, #cabecalho .centro, #shows, #contatos, #rodape{
+    color: #fff;
+}
+#shows, #contatos, #rodape{
+    background: linear-gradient(#f389a0, #e8557a);
+}
+
+/*SETUP PADRÃO CONTAINER */
+.container{
+    height: 100vh;
+}
+.container, .ctn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*SETUP DA DIV TOP*/
+#cabecalho .top{
+    height:75px;
+    flex-direction: row;
+    background: linear-gradient(#f389a0, #e8557a);
+    font-size: 200%;
+}
+#cabecalho .titulo{
+    padding-left: 5%;
+    font-family: 'subTitulos';
+}
+#cabecalho .menu{
+    text-align: right;
+    padding-right: 5%;
+}
+
+/*SETUP DA DIV CENTRO*/
+#cabecalho .centro{
+    height: 100%;
+    background: url('../_images_/banda.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    text-shadow: #000 0px 5px 25px;
+    font-family: 'subTitulos';
+}
+.centro h1{
+    font-size: 400%;
+}
+.centro p{
+    font-size: 115%;
+}
+
+/*SETUP DA DIV BOTTOM*/
+#cabecalho .bottom{
+    height: 75px;
+    background: linear-gradient(#f3c6d0, #e8557a);
+    flex-direction: row;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.bottom img{
+    width: 35px;
+}
+.bottom a{
+    justify-content: center;
+    height: 100%;
+}
+.cor{
+    background: linear-gradient(#f389a0, #e8557a);
+}
+.bottom a:hover, .cor:hover{
+    background: linear-gradient(#f8dae2, #f5d9df);
+}
+
+/*SETUP DO BIG CONTAINER*/
+#bigContainer{
+    display: none;
+}
+
+/*SETUP DO CONTAINER SHOWS*/
+#shows .ctn{
+    flex-direction: row;
+}
+#shows h4{
+    width: 100px;
+    height: 80px;
+    border: 2px solid #ffffff;
+    justify-content: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+#shows p{
+    text-align: left;
+}
+
+/*CONTAINER COMPRAR*/
+#shop{
+    height: 200px;
+}
+
+/*SETUP DO CONTAINER CONTATOS*/
+#formulario{
+    text-align: left;
+    border: none;
+    margin-bottom: 25px;
+}
+#contatos input, #contatos textarea{
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+#submit{
+    width: 100px;
+    cursor: pointer;
+}
+#contatos .endereco{
+    text-align: left;
+}
+.endereco h3{
+    font-size: 130%;
+}
+
+/*SETUP DO CONTAINER RODAPÉ*/
+#rodape{
+    padding: 10px 5px;
+    text-align: center;
+}
+#rodape a{
+    color: #fff;
+}
+
+/*SETUP RESPONSIVO*/
+@media only screen and (orientation: landscape){
+    #cabecalho .centro{
+        background-position: top;
+    }
+    #cabecalho .bottom{
+        display: none;
+    }
+    #bigContainer{
+        display: block;
+    }
+}
+
+@media screen and (min-width:600px){
+    #about{
+        width: 50%;
+        margin: 0 auto;
+    }
+    #contatos .ctn{
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .endereco{
+        padding-left: 5px;
+    }
+}
+@media screen and (min-width:960px){
+    #cabecalho .centro h1{
+        font-size: 600%;
+    }
+}
